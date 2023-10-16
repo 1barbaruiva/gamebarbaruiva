@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .wrapper{
+                    margin:auto;
+                    /* centralizar */            
+                    display: flex;
+                    /* para transformar em blocos */
+                    flex-direction: row;
+                    /* temos tabem em coluna ->colum */
+                    flex-wrap:wrap;
+                    /* qdo ultilizamos o bloco eles ficam um do lado do outro mesmo que tenha tamnho total da tela  */
+                    justify-content: center;
+                    /* alinhando os blocos na horizontal dentro do principal (wrapper) */
+                    align-items:center;
+                    /* alinhando os blocos na vertical dentro do principal (wrapper) */
+                    width: 90%;
+                    /* largura do principal */
+                    height: auto;
+                    background-color: rgb(3, 3, 3);
+                    padding: 0px;
+                    /* espaço entre as caixas principais */
+                }
+
+                @media screen and (min-width:375px){
+            .wrapper{
+                width: 100%;
+                
+            }
+        }
+        @media screen and (min-width:1200px){
+            .wrapper{
+                width:100%;
+            }
+        }
+
+        
+
+                header{
+            background-color:#BB3B3C;
+            width: 90%;
+            height:35px;
+            margin: 1px;
+            padding-top:1%;
+            
+            
+        
+            
+        }
+
+        nav{
+            float: left;
+        }
+
+        nav ul{
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        nav ul li{
+            float: left;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: #ffffff;
+            padding: 15px 15px 15px 15px;
+            margin-left: 40px;
+            
+        }
+
+        nav ul li a:hover{
+            color: #fffcfc;
+            border-bottom: #fffcfc 2px solid;
+        } 
+
+        /* Configuração no menu para responsivo */
+
+        @media screen and (min-width:375px){
+            nav ul li a {
+                font-size: 13px;
+                padding:2px;}
+                
+            }
+
+        @media screen and (min-width:800px){
+            nav ul li a {
+                font-size: 13px;
+                padding:2px;
+                
+            }
+                
+            }    
+
+            @media screen and (min-width:1200px){
+            nav ul li a {
+                text-decoration: none; /*remover sublinhado*/
+            color: #ffffff;
+            padding-left:10px;
+            margin-left: 30px;
+            font-size: 15px;}
+            }
+            
+            @media screen and (min-width:1200px) {
+                nav ul li a:hover{ /*hover (mouse sobre o link)*/
+            color: #fffcfc;
+            /*text-decoration: underline;*/
+            border-bottom: #fffcfc 2px solid;
+            
+          
+        }
+            }
+
+
+
+        
+        .banner{
+            background-color: rgb(105, 26, 151);
+            width:100%;
+            height: auto;
+            margin:0;
+            padding: 5px;
+            background-color: black;
+            
+                       
+        }
+        .imgbanner{
+            width: 100%;
+            height: 500px;
+            
+            
+            
+        }
+        
+        @media screen and (min-width:300px){
+            .banner{
+                width: 90%;
+                height: auto;
+            }    
+        }
+        @media screen and (min-width:1200px){
+            .banner{
+                width: 90%;
+                height: auto;
+                 
+                
+            }
+            .titulos{
+                width: 21.3%;
+                height:90px;
+                margin: 15px;
+                font-weight: bolder;
+                background-color: #BB3B3C;
+                border-radius: 25px;
+                display: inline;
+                border: #fffcfc;
+                padding-top: 1px;
+                
+           }
+           .imgtitulos{
+            width:400px;
+            height: 89.7px;
+            
+            border-radius: 25px;
+           }
+          
+            
+            
+        }
+        
+        .conteudo{
+            width: 88%;
+            height: auto;
+            background-color: #18191a;
+            padding: 20px;
+            border-radius: 20px;
+            
+            
+        }
+
+        .video{
+            width: 22.4%;
+            height: 500px;
+            background-color: #BB3B3C;
+            border-radius: 25px;
+            padding: 0.1%;
+            margin: 5px;
+            display: inline;
+            
+           
+        }
+        .t2{
+            width: 17%;
+            color: #f0eeee;
+            padding: 20px;
+            font-weight: bolder;
+            background-color: #BB3B3C;
+            border-radius: 10px;
+            text-align: center;
+           
+        }
+
+        .titulojogos1{
+            color: #f0eeee;
+           
+            display: inline;
+            margin: 5.3%;
+                    
+        }
+
+        .titulojogos1 a{
+            color: #f0eeee;
+            text-decoration: none;
+
+        }
+
+        .titulojogos2{
+            color: #f0eeee;
+            
+            display: inline;
+            margin: 4.3%;
+         }
+
+         .titulojogos2 a{
+            color: #f0eeee;
+            text-decoration: none;
+        }
+
+        .titulojogos3{
+            color: #f0eeee;
+            
+            display: inline;
+            margin: 7.3%;
+        }
+
+        .titulojogos3 a{
+            color: #f0eeee;
+            text-decoration: none;
+        }
+
+        .titulojogos4{
+            color: #f0eeee;
+            
+            display: inline;
+            margin: 5.3%;
+         }
+
+         .titulojogos4 a{
+            color: #f0eeee;
+            text-decoration: none;
+        }
+        
+
+        
+
+        .rodape{
+            background-color: #18191a; ;
+            width:90%;
+            height: 60px;
+            margin:0;
+            
+            font-size:15px;
+            text-align: center;
+            margin-top: 1px;
+        }
+
+
+    </style>
+    
+
+</head>
+<body>
+    <div class="wrapper">
+
+       
+     
+
+       <div class="banner">
+        <img src="imagens/bannerbarbaruivaeditado.png" class="imgbanner" alt="">
+   </div>
+   <header>
+    <div class="logo">
+
+    
+       
+     </div>
+
+     <Nav>
+         <ul>
+             <li><a href="index.html">HOME</a></li>
+             <li><a href="games.html">GAMES</a></li>
+             <li><a href="videos.html">VIDEOS</a></li>
+             <li><a href="index.html">CORRIDA</a></li>
+             <li><a href="games.html">GUERRA</a></li>
+             <li><a href="videos.html">FUTEBOL</a></li>
+             
+           </ul>
+      </Nav>
+    </header> 
+   <div class="titulos" >
+      <img src="imagens/granturismo7editado.png" class="imgtitulos">
+   </div>
+
+   <div class="titulos" >
+    <img src="imagens/warzoneeditado.png" class="imgtitulos">
+   </div>
+
+   <div class="titulos" >
+    <img src="imagens/fifa23editado.png" class="imgtitulos">
+   </div>
+   <div class="titulos" >
+    <img src="imagens/f124editado.png" class="imgtitulos">
+   </div>
+
+   
+       <div class=" conteudo">
+            <p class="t2">LANÇAMENTOS EM OUTUBRO 2023</p>
+                
+                    <iframe class="video"  width="380" height="224" src="https://www.youtube.com/embed/SvXCuoohTr8" title="Assassin&#39;s Creed Mirage: Trailer de Lançamento [DUBLADO] | Ubisoft Brasil" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                   
+                 
+                    <iframe class="video" width="380" height="224" src="https://www.youtube.com/embed/s6BPC5gkPsA" title="Detective Pikachu Returns – The Story so Far - Nintendo Switch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    <iframe class="video" width="380" height="224" src="https://www.youtube.com/embed/em4gv1Ietko" title="Forza Motorsport - Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    <iframe class="video" width="380" height="224" src="https://www.youtube.com/embed/07bcyesxbrg" title="Marvel’s Spider-Man 2 - Trailer da história | PS5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p class="titulojogos1"><a href="#">ASSASSIN´S CREED MIRAGE</a> </p>
+                    <p class="titulojogos2"><a href="#">DETECTIVE PIKACHU RETURNS</a></p>
+                    <p class="titulojogos3"><a href="#">FORZA MOTORSPORT</a></p>
+                    <p class="titulojogos4"><a href="#">MARVEL´S SPIDER-MAN 2</a></p>
+
+                    
+            <p class="t2">EVENTOS 28/10 E </p>
+        </div>
+        
+       
+        
+
+       <div class="rodape">
+      
+        </div>
+
+    </div>
+    
+</body>
+</html>
